@@ -1,0 +1,8 @@
+.list{
+  display: flex;
+  flex-direction: column;
+    &_empty{
+      color: #ff0000;
+      font-size: 20px;
+    }
+}

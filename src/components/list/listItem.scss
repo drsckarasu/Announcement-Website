@@ -1,0 +1,45 @@
+.list-item{
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1vw;
+  border-radius: 5px;  
+  border: 1px solid #00008b;
+  &_info{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    .text{
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 700;
+      color: #000;
+      transition-duration: 0.2s;
+      &:hover{
+        font-size: 20px;
+      }
+    }
+  }
+  &_btns{
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    button{
+      width: 100px;   
+      border: none;
+      background-color: #6495ed;
+      padding: 5px;
+      color: #fff;
+      border-radius: 3px;
+      cursor: pointer;
+      &:hover{
+        transform: scale(1.1);
+      }
+    }
+    .delete-btn{
+      background-color: #dc143c;
+      margin-right: 10px;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.main{
+  display: flex;
+  justify-content: center;
+  .content{
+    width: 80%;
+    max-width: 1170px;
+    padding: 2vw 0;
+    &_inputs{
+      display: flex;
+      justify-content: space-between;
+      .open-btn {
+        margin: 0;
+        border: 0;
+        padding: 0;
+        background: hsl(216, 100, 50);
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all 150ms;
+        .icon-cross {
+          margin: 0;
+          padding: 0;
+          border: 0;
+          background: none;
+          position: relative;
+          width: 25px;
+          height: 25px;
+          &:before,
+          &:after {
+            content: '';
+            position: absolute;
+            top: (25px - 5px) / 2;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: #fff;
+            border-radius: 5px;
+          }
+          &:before {
+            transform: rotate(90deg);
+          }
+          &:after {
+            transform: rotate(180deg);
+          }
+          span {
+            display: block;
+          }  
+        }   
+        &:hover,
+        &:focus {
+          transform: rotateZ(90deg);
+          background: hsl(216, 100, 40);
+        }      
+      }
+    }
+  }
+}

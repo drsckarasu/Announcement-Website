@@ -1,0 +1,46 @@
+.page-announcement{
+  display: flex;
+  justify-content: center;
+  &_container{
+    width: 80%;
+    max-width: 1170px;
+    padding: 2vw 0;
+    &_link-time{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .link{
+        text-decoration: none;
+        font-size: 26px;
+        font-weight: 700;
+        color: #0000ff;
+        transition-duration: 0.2s;
+        &:hover{
+          font-size: 28px;
+        }
+      }
+      .time{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #808080;
+        font-size: 14px;
+      }
+    }
+    &_info{
+      h2{
+        text-align: center;
+        margin-top: 10px;
+        font-size: 30px;
+        color: #11998e;
+      }
+      p{
+        font-size: 18px;
+      }
+    }
+    &_top-alike{
+        border-top: 1px dashed #11998e;
+        padding-top: 1vw;
+    }
+  }
+}

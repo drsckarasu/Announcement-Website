@@ -1,0 +1,27 @@
+.search{
+    padding: 1vw;
+    margin-bottom: 2vw;
+    &_input{
+        outline: 0;
+        font-size: 18px;
+        color: #00008b;
+        padding: 7px 0;
+        background: transparent;
+        border: 0;
+        width: 30vw;
+        border-bottom: 2px solid #9b9b9b;
+        transition-duration: 2s;
+        &:focus {
+            width: 50vw;
+            padding-bottom: 6px;  
+            font-weight: 700;
+            border-width: 3px;
+            border-image: linear-gradient(to right, #11998e, #38ef7d);
+            border-image-slice: 1;
+            &::placeholder{
+                color: transparent;
+            }
+        }
+    }
+}
+
