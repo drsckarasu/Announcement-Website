@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import ListItemTop from './listItemTop';
 import './listTop.scss';
 
@@ -55,3 +56,15 @@ const ListTop = ({
 };
 
 export default ListTop;
+
+ListTop.propTypes = {
+  announcements: PropTypes.array,
+  elementItem: PropTypes.object,
+  setAnnouncements: PropTypes.func,
+};
+
+ListTop.defaultProps = {
+  announcements: [],
+  elementItem: {},
+  setAnnouncements: () => {},
+};

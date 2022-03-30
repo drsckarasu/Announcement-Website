@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import './modalEdit.scss';
 
 const ModalEdit = ({
@@ -161,3 +162,21 @@ const ModalEdit = ({
 };
 
 export default ModalEdit;
+
+ModalEdit.propTypes = {
+  closeModalInfo: PropTypes.func,
+  title: PropTypes.string,
+  description: PropTypes.string,
+  announcements: PropTypes.array,
+  setAnnouncements: PropTypes.func,
+  item: PropTypes.object,
+};
+
+ModalEdit.defaultProps = {
+  closeModalInfo: () => {},
+  title: '',
+  description: '',
+  announcements: [],
+  setAnnouncements: () => {},
+  item: {},
+};
