@@ -31,11 +31,11 @@ const App = () => {
     <div className="wrapper">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Main announcements={announcements} setAnnouncements={setAnnouncements} />}>
-            <Route path="/add_announcement" element={<ModalAdd />} />
-            <Route path="/edit-modal/:id" element={<ModalEdit />} />
+          <Route path="/Announcement-Website/" element={<Main announcements={announcements} setAnnouncements={setAnnouncements} />}>
+            <Route path="/Announcement-Website/add_announcement" element={<ModalAdd />} />
+            <Route path="/Announcement-Website/edit-modal/:id" element={<ModalEdit />} />
           </Route>
-          <Route path="/page_announcement/:id" element={<AnnouncementPage announcements={announcements} setAnnouncements={setAnnouncements} />} />
+          <Route path="/Announcement-Website/page_announcement/:id" element={<AnnouncementPage announcements={announcements} setAnnouncements={setAnnouncements} />} />
         </Routes>
       </BrowserRouter>
     </div>

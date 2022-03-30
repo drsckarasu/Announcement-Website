@@ -36,7 +36,7 @@ const AnnouncementPage = ({
     <div className="page-announcement">
       <div className="page-announcement_container">
         <div className="page-announcement_container_link-time">
-          <Link to="/" className="link">
+          <Link to="/Announcement-Website/" className="link">
             Home
           </Link>
           <p className="time">

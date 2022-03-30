@@ -9,7 +9,7 @@ const ListItemTop = ({
   item,
 }) => (
   <Link
-    to={`/page_announcement/${item.id}`}
+    to={`/Announcement-Website/page_announcement/${item.id}`}
     state={{
       title,
       description,

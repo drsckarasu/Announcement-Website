@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import './modalAdd.scss';
 
 const ModalAdd = ({
@@ -158,3 +159,15 @@ const ModalAdd = ({
 };
 
 export default ModalAdd;
+
+ModalAdd.propTypes = {
+  announcements: PropTypes.array,
+  closeModal: PropTypes.func,
+  setAnnouncements: PropTypes.func,
+};
+
+ModalAdd.defaultProps = {
+  announcements: [],
+  closeModal: () => {},
+  setAnnouncements: () => {},
+};

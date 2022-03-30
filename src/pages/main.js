@@ -25,7 +25,7 @@ const Main = ({
       <div className="content">
         <div className="content_inputs">
           <Search searchStatus={searchStatus} setSearchStatus={setSearchStatus} />
-          <Link to="/add_announcement">
+          <Link to="/Announcement-Website/add_announcement">
             <button type="button" onClick={() => setOpenModal(true)} className="open-btn">
               <span className="icon-cross" />
             </button>

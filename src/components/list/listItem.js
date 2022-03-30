@@ -32,7 +32,7 @@ const ListItem = ({
     <div className="list-item">
       <div className="list-item_info">
         <Link
-          to={`/page_announcement/${item.id}`}
+          to={`/Announcement-Website/page_announcement/${item.id}`}
           state={{
             title,
             description,
@@ -48,7 +48,7 @@ const ListItem = ({
         <button className="delete-btn" type="button" onClick={deleteHandler}>
           Delete
         </button>
-        <Link to={`/edit-modal/${item.id}`}>
+        <Link to={`/Announcement-Website/edit-modal/${item.id}`}>
           <button type="button" onClick={updateHandler}>
             Edit
           </button>
