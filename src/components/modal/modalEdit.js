@@ -115,7 +115,7 @@ const ModalEdit = ({
           </button>
         </div>
         <div className="modal-edit_container_title">
-          <h2>New Announcement</h2>
+          <h2>{item.title}</h2>
         </div>
         <form
           onSubmit={submitEditItemHandler}
