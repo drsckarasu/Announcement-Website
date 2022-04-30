@@ -21,7 +21,6 @@ const ModalEdit = ({
   const [textAreaInputError, setTextAreaInputError] = useState(ERROR_INPUT);
   const [formValid, setFormValid] = useState(false);
   const navigate = useNavigate();
-
   const closeModalURL = () => {
     navigate('./');
     closeModalInfo(false);
